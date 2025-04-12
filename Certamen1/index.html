@@ -7,13 +7,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.145.0">
 
-    <link rel="stylesheet" href="navbars.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
-    <title>Pentesting, hackers y la ciberseguridad</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
-    <script src="../assets/js/color-modes.js"></script>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -23,7 +19,7 @@
     <link rel="icon" href="../assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
 
-
+    
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -107,9 +103,29 @@
         display: block !important;
       }
     </style>
+    
+    <!-- estilos propios -->
+     <style>
+      .texto-navbar-rojo{
+        color: currentColor;
+      }
+      .texto-navbar-rojo:hover{
+        color: red;
+      }
 
+      .texto-navbar-azul{
+        color: currentColor;
+      }
+      .texto-navbar-azul:hover{
+        color: #09f;
+      }
+     </style>
+
+    <title>Pentesting, hackers y la ciberseguridad</title>
     
   </head>
+
+  <!-- mi navbar -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
         <div class="container-fluid">
@@ -118,26 +134,29 @@
           </button>
   
           <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#">CyberInfo</a>
+            <a class="navbar-brand col-lg-3 me-0" href="#">>_ CyberInfo</a>
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">página 2</a>
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link texto-navbar-rojo" href="redteam.html">RED TEAM</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">página 3</a>
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link texto-navbar-azul" href="blueteam.html">BLUE TEAM</a>
               </li>
             </ul>
             <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn btn-primary">Botón de ejemplo</button>
+              <button class="btn btn-primary">IR AL REPOSITORIO</button>
             </div>
           </div>
         </div>
       </nav>
   </header>
+
+
   <body>
+    <!-- Dark/light theme -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check2" viewBox="0 0 16 16">
     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -153,7 +172,6 @@
     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
   </symbol>
 </svg>
-
 
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
@@ -192,49 +210,105 @@
 
     </div>
 
-    
+
+
+    <!-- contenido de mi pagina -->
 <main>
   <div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-        <span class="fs-4">La Ciberseguridad</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-incognito" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m4.736 1.968-.892 3.269-.014.058C2.113 5.568 1 6.006 1 6.5 1 7.328 4.134 8 8 8s7-.672 7-1.5c0-.494-1.113-.932-2.83-1.205l-.014-.058-.892-3.27c-.146-.533-.698-.849-1.239-.734C9.411 1.363 8.62 1.5 8 1.5s-1.411-.136-2.025-.267c-.541-.115-1.093.2-1.239.735m.015 3.867a.25.25 0 0 1 .274-.224c.9.092 1.91.143 2.975.143a30 30 0 0 0 2.975-.143.25.25 0 0 1 .05.498c-.918.093-1.944.145-3.025.145s-2.107-.052-3.025-.145a.25.25 0 0 1-.224-.274M3.5 10h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5m-1.5.5q.001-.264.085-.5H2a.5.5 0 0 1 0-1h3.5a1.5 1.5 0 0 1 1.488 1.312 3.5 3.5 0 0 1 2.024 0A1.5 1.5 0 0 1 10.5 9H14a.5.5 0 0 1 0 1h-.085q.084.236.085.5v1a2.5 2.5 0 0 1-5 0v-.14l-.21-.07a2.5 2.5 0 0 0-1.58 0l-.21.07v.14a2.5 2.5 0 0 1-5 0zm8.5-.5h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5"/>
+        </svg>
+        <span class="fs-4">Ciberseguridad y tipos de hackers</span>
       </a>
     </header>
 
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="p-4 mb-4 bg-body-tertiary rounded-3">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">ejemplo 1</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        <h1 class="display-5 fw-bold">¿Qué es el pentesting y la ciberseguridad?</h1>
+        <p class="col-md-9 fs-5">
+          La ciberseguridad es la práctica de proteger sistemas, redes y datos de ataques digitales. El pentesting (pruebas de penetración) es una técnica proactiva dentro de la ciberseguridad donde expertos simulan ataques reales para identificar y corregir vulnerabilidades antes que los hackers las exploten.
+        </p>
+        <a class="btn btn-primary btn-lg" type="button" href="ciberseguridad.html">Más información</a>
       </div>
     </div>
 
-    <div class="row align-items-md-stretch">
+
+    <div class="row align-items-md-stretch ">
       <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-dark rounded-3">
-          <h2>ejemplo 2</h2>
-          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
+        <div class="h-100 p-5 bg-danger-subtle border rounded-3">
+          <h2 style="color:#F00"><strong>RED TEAM</strong></h2>
+          <p>
+            El <span style="color:#F00">RED TEAM</span> es un equipo de ciberseguridad que simula ataques realistas para evaluar las defensas de una organización. A diferencia del pentesting tradicional, sus operaciones son más sigilosas y persistentes, emulando tácticas de hackers avanzados (como APTs).
+            <br><br>
+            <span style="background-color: #ff9f87;border-radius: 3px;padding: 2px;"><strong> Su objetivo</strong>: encontrar brechas críticas antes que los atacantes reales.</span>
+          </p>
+          <a class="btn btn-outline-danger" type="button" href="redteam.html">Conocer al RED TEAM</a>
         </div>
       </div>
+
+      
       <div class="col-md-6">
-        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <h2>ejemplo 3</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
+        <div class="h-100 p-5 bg-primary-subtle border rounded-3">
+          <h2 style="color:#09F" ><strong>BLUE TEAM</strong></h2>
+          <p>
+            El <span style="color:#09F">BLUE TEAM</span> es el equipo defensivo encargado de proteger sistemas, detectar intrusiones y responder a ciberataques. Su labor incluye monitoreo continuo (con SIEMs), análisis de amenazas y fortalecimiento de firewalls, IDS/IPS. 
+            <br><br>
+            <span style="background-color: rgb(135, 207, 255);border-radius: 3px;padding: 2px;"><strong> Su objetivo</strong>: anticiparse y neutralizar amenazas en tiempo real</span>
+          </p>
+          <a class="btn btn-outline-primary" type="button" href="blueteam.html">Conocer al BLUE TEAM</a>
         </div>
       </div>
     </div>
-
-    <footer class="pt-3 mt-4 text-body-secondary border-top">
-      &copy; 2025
-    </footer>
   </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<script defer src="../assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
+  <!-- script para que funcione el toggle theme -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const themeToggleButtons = document.querySelectorAll('[data-bs-theme-value]');
+        const htmlElement = document.documentElement;
+        const themeIcon = document.querySelector('.theme-icon-active use');
 
-    </body>
+        // Function to apply the theme
+        function applyTheme(theme) {
+          const iconMap = {
+            light: '#sun-fill',
+            dark: '#moon-stars-fill',
+            auto: '#circle-half'
+          };
+
+          if (theme === 'auto') {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            theme = prefersDark ? 'dark' : 'light';
+          }
+
+          htmlElement.setAttribute('data-bs-theme', theme);
+          themeIcon.setAttribute('href', iconMap[theme]);
+          localStorage.setItem('theme', theme);
+
+          themeToggleButtons.forEach(btn => {
+            btn.setAttribute('aria-pressed', btn.getAttribute('data-bs-theme-value') === theme ? 'true' : 'false');
+            btn.classList.toggle('active', btn.getAttribute('data-bs-theme-value') === theme);
+          });
+        }
+
+        // Load the saved theme or default to auto
+        const savedTheme = localStorage.getItem('theme') || 'auto';
+        applyTheme(savedTheme);
+
+        themeToggleButtons.forEach(button => {
+          button.addEventListener('click', function () {
+            const theme = this.getAttribute('data-bs-theme-value');
+            applyTheme(theme);
+          });
+        });
+      });
+  </script>
+
+  <!-- Scripts de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script defer src="../assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
+</body>
 </html>
