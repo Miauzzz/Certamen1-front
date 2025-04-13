@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.145.0">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="../assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="../assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    
+    <!-- estilos propios -->
+     <style>
+      .texto-navbar-rojo{
+        color: currentColor;
+      }
+      .texto-navbar-rojo:hover{
+        color: red;
+      }
+
+      .texto-navbar-azul{
+        color: currentColor;
+      }
+      .texto-navbar-azul:hover{
+        color: #09f;
+      }
+     </style>
+
+    <title>Pentesting, hackers y la ciberseguridad</title>
+    
+  </head>
+
+  <!-- mi navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0" href="../index.html">>_ CyberInfo</a>
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link texto-navbar-rojo" href="redteam.html">RED TEAM</a>
+              </li>
+              <li style="margin-right: 20px;" class="nav-item">
+                <a class="nav-link texto-navbar-azul" href="blueteam.html">BLUE TEAM</a>
+              </li>
+            </ul>
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <a href="https://github.com/Miauzzz/Certamen1-front"><button class="btn btn-primary">IR AL REPOSITORIO</button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+
+  <body>
+    <!-- Dark/light theme -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
+  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+    </div>
+
+
+
+    <!-- contenido de mi pagina -->
+<main>
+  <div class="card" style="margin-bottom: 50px;">
+    <div class="card-body container marketing">
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img style="clip-path: inset(0 0px); width: 100%;height: 100%;" src="https://images.pexels.com/photos/5483147/pexels-photo-5483147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="Imagen blueteam"  class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 style="padding-top: 5%;" class="card-title text-center">BLUE TEAM</h2>
+              <p style="text-align: justify; padding: 10px 10px 0px 10px;">
+                El Blue Team constituye la fuerza defensiva en ciberseguridad, encargada de proteger sistemas, detectar intrusiones y responder a incidentes. Estos especialistas trabajan continuamente para mantener la integridad de la infraestructura tecnológica, implementando controles de seguridad y monitoreando actividades sospechosas.
+              </p>
+              <p style="text-align: justify; padding: 0px 10px 0px 10px;">
+                Sus responsabilidades clave incluyen: la configuración y gestión de firewalls, sistemas de detección/prevención de intrusiones (IDS/IPS), análisis de logs mediante plataformas SIEM, respuesta a incidentes (CSIRT), y la implementación de medidas de hardening para reducir superficies de ataque. Utilizan inteligencia de amenazas (Threat Intelligence) para anticipar ataques potenciales y frameworks como NIST CSF para estructurar sus defensas.
+              </p>
+              <p style="text-align: justify; padding: 0px 10px 0px 10px;">
+                A diferencia de enfoques reactivos tradicionales, los Blue Teams modernos practican threat hunting (búsqueda activa de amenazas), analizando patrones de comportamiento para identificar compromisos que hayan evadido las defensas perimetrales. Su trabajo es fundamental para mantener la continuidad operativa y proteger datos sensibles contra accesos no autorizados.
+              </p>
+              <p style="text-align: justify; padding: 0px 10px 0px 10px;"></p>
+                La interacción entre ambos equipos (a través de ejercicios de Purple Teaming) crea un ciclo virtuoso donde las vulnerabilidades descubiertas por el Red Team permiten al Blue Team mejorar continuamente sus mecanismos de protección.
+              </p>
+            </div>
+
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="redteam.html"><button type="button" class="btn btn-outline-danger btn-lg px-4" style="margin-bottom: 60px;">Conoce al RED TEAM</button></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<section>
+  <h2 class="text-center" style="margin-bottom: 50px;"><strong>Tipos de hackers</strong></h2>
+  <!-- carrousel template -->
+  <div class="container marketing" >
+    <!-- Three columns of text below the carousel -->
+    <div style="margin-left: 100px;" class="row">
+      <div class="col-lg-4">
+        <img src="/img/whitehat.jpg" class="bd-placeholder-img rounded-circle" width="150" height="165" role="img"><title>Placeholder</title></IMG>
+        <h2 class="fw-normal" style="margin-bottom: 15px;margin-top: 15px;">White Hat</h2>
+        <p style="text-align: justify;">
+          Los hackers de sombrero blanco son los profesionales éticos que operan dentro del marco legal. Su trabajo consiste en identificar y corregir vulnerabilidades en sistemas y redes para fortalecer su seguridad. Muchos de ellos se desempeñan como pentesters, analistas de seguridad o participantes en programas de Bug Bounty, donde reciben recompensas por reportar fallos de manera responsable. Su labor es fundamental para prevenir ciberataques antes de que los actores maliciosos los exploten.
+        </p>
+
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="/img/greyhat.jpg" class="bd-placeholder-img rounded-circle" width="150" height="165" role="img"><title>Placeholder</title></IMG>
+        <h2 class="fw-normal" style="margin-bottom: 15px;margin-top: 15px;">Grey Hat</h2>
+        <p style="text-align: justify;">
+          Los hackers de sombrero gris, que ocupan un espacio ambiguo. Estos individuos pueden infiltrarse en sistemas sin autorización, pero no siempre con fines destructivos. A veces exponen vulnerabilidades públicamente para forzar a las empresas a repararlas, aunque sus métodos suelen ser cuestionados por carecer de aprobación oficial. Su enfoque puede variar desde el hacktivismo hasta la venta de vulnerabilidades al mejor postor.
+        </p>
+
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="/img/blackhat.jpg" class="bd-placeholder-img rounded-circle" width="150" height="165" role="img"><title>Placeholder</title></IMG>
+        <h2 class="fw-normal" style="margin-bottom: 15px;margin-top: 15px;">Black Hat</h2>
+        <p style="text-align: justify;">
+          Los hackers de sombrero negro, quienes actúan con intenciones maliciosas y fuera de la ley. Este grupo incluye ciberdelincuentes que desarrollan malware, realizan ataques de ransomware, roban datos confidenciales o comprometen sistemas para beneficio propio. Su actividad no solo causa daños económicos, sino que también pone en riesgo la privacidad y seguridad de individuos y organizaciones.
+        </p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</section>
+
+<footer>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+          <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Manuel Constanzo - Certamen 1 Front End </span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</footer>
+
+  <!-- script para que funcione el toggle theme -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const themeToggleButtons = document.querySelectorAll('[data-bs-theme-value]');
+        const htmlElement = document.documentElement;
+        const themeIcon = document.querySelector('.theme-icon-active use');
+
+        // Function to apply the theme
+        function applyTheme(theme) {
+          const iconMap = {
+            light: '#sun-fill',
+            dark: '#moon-stars-fill',
+            auto: '#circle-half'
+          };
+
+          if (theme === 'auto') {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            theme = prefersDark ? 'dark' : 'light';
+          }
+
+          htmlElement.setAttribute('data-bs-theme', theme);
+          themeIcon.setAttribute('href', iconMap[theme]);
+          localStorage.setItem('theme', theme);
+
+          themeToggleButtons.forEach(btn => {
+            btn.setAttribute('aria-pressed', btn.getAttribute('data-bs-theme-value') === theme ? 'true' : 'false');
+            btn.classList.toggle('active', btn.getAttribute('data-bs-theme-value') === theme);
+          });
+        }
+
+        // Load the saved theme or default to auto
+        const savedTheme = localStorage.getItem('theme') || 'auto';
+        applyTheme(savedTheme);
+
+        themeToggleButtons.forEach(button => {
+          button.addEventListener('click', function () {
+            const theme = this.getAttribute('data-bs-theme-value');
+            applyTheme(theme);
+          });
+        });
+      });
+  </script>
+
+  <!-- Scripts de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script defer src="../assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"></script>
+</body>
+</html>
